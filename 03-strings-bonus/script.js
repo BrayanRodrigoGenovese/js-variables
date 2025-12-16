@@ -29,3 +29,15 @@ console.log(cityNameConcat); // Output: "New York City"
 // Trasforma tutto in maiscuolo la stringa della variabile hello
 const upperCaseHello = hello.toUpperCase();
 console.log(upperCaseHello); // Output: "HELLO"
+
+// SHOPPING LIST BONUS
+let shoppingListCapitalized = "";
+shoppingList.split(", ").forEach((Substring) => {
+  if (shoppingListCapitalized.length != 0) {
+    shoppingListCapitalized += ", ";
+  }
+  shoppingListCapitalized +=
+    Substring.charAt(0).toUpperCase() + Substring.slice(1);
+});
+
+console.log(shoppingListCapitalized);
